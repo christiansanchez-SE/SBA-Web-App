@@ -35,8 +35,11 @@ export async function getTemp() {
           .then((response) => response.json())
           .then((json) => {
               result.innerHTML = `${cityValue} <br>
-               ${json.main.temp}°C
-               ${json.weather[0].icon}`
+               Temperature: ${json.main.temp}°C <br>
+               Feels Like: ${json.main.feels_like} <br>
+               Temp Max: ${json.main.temp_max} <br>
+               Temp Min: ${json.main.temp_min}
+               `
               console.log(json);
             })
           .catch((error) => {
@@ -45,6 +48,7 @@ export async function getTemp() {
             });
     }
 }
+searchButton.addEventListener("click", getTemp);
 
         
     
