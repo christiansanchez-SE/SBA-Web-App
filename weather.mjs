@@ -11,15 +11,15 @@ export async function getTemp() {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=aa459fca760500cc0965198c715b1e6e&units=metric`;
         fetch(url)
           .then((response) => response.json())
-          .then((data) => {
+          .then((json) => {
               result.innerHTML = `${cityValue} <br>
-               Temperature: ${data.main.temp}°C <br>
-               Feels Like: ${data.main.feels_like} <br>
-               Temp Max: ${data.main.temp_max} <br>
-               Temp Min: ${data.main.temp_min}
+               Temperature: ${json.main.temp}°C <br>
+               Feels Like: ${json.main.feels_like} <br>
+               Temp Max: ${json.main.temp_max} <br>
+               Temp Min: ${json.main.temp_min}
                `
-               let iconCode = data.weather[0].icon;
-               let iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
+               let iconCode = json.weather[0].icon;
+               let iconUrl = `https://openweathermap.org/img/wn/${iconCode}@4x.png`;
                weatherIcon.src = iconUrl;
 
             })

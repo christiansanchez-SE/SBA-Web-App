@@ -2,7 +2,7 @@
 // Fetch Request -> JSON placeholder
 
 let result = document.getElementById("resultTwo");
-let searchButton = document.getElementById("searchBtn");
+// let searchButton = document.getElementById("searchBtn");
 let cityRef = document.getElementById("city");
 
 export async function gettempTwo() {
@@ -30,4 +30,4 @@ export async function gettempTwo() {
     }
 }
 
-searchButton.addEventListener("click", gettempTwo);
+// searchButton.addEventListener("click", gettempTwo);
