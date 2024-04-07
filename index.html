@@ -10,18 +10,21 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-<h1>Text</h1>
-        <div class="mainContainer"></div>
-
-        <div class="weatherContainer">
-            
-            <div class="searchContainer">
-                <input type="text" id="city" placeholder="Enter city name" value="New York">
-                <button id="searchBtn">Search</button>
-            </div>
-
-            <div id="result"></div>
+        
+        <div class="header">
+            <h1>Lofi Weather Station</h1>
         </div>
+
+        <div class="mainContainer">
+            <div class="weatherContainer">
+                <div class="searchContainer">
+                    <input type="text" id="city" placeholder="Enter city name" value="New York">
+                    <button id="searchBtn">Search</button>
+                </div>
+                <div id="result"></div>
+            </div>
+        </div>
+
         
         <script src="data.mjs" type="module" async defer></script>
     </body>

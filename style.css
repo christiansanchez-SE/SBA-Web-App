@@ -2,6 +2,19 @@ body{
     font-family: sans-serif;
 }
 
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer{
+    border: solid green;
+    display: block;
+    justify-content: center;
+    padding: 2em;
+    margin: 1em;
+}
+
 /* --- This is the body --- */
 .weatherContainer{
     border: solid black;
@@ -11,6 +24,7 @@ body{
     align-items: center;
     height: auto;
     max-width: 540px;
+    transform: translateX(600px);
 }
 
 /* --- This is the search container --- */
