@@ -4,6 +4,8 @@ body{
     background-image: url(https://windowscustomization.com/wp-content/uploads/2018/08/fire-watch.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    
 }
 
 .superContainer{
