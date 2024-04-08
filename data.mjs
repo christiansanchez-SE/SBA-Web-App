@@ -7,3 +7,11 @@ import { gettempTwo } from "./weatherTwo.mjs";
 // getPhotos();
 getTemp();
 gettempTwo();
+
+let searchBtn = document.querySelector(".scrollUp");
+
+function toggleButton(){
+    window.scrollTo({top: 0, behavior:'smooth'});
+}
+
+searchBtn.addEventListener("click", toggleButton);

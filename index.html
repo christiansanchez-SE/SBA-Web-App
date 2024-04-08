@@ -12,29 +12,42 @@
     </head>
     <body>
 
-        <div class="header">
-            <h1>Surfer Weather Station</h1>
-        </div>
+        <div class="superContainer">
 
-        <div class="mainContainer">
-
-            <div class="secondContainer">
-                
-                <!-- First Weather Container -->
-                <div class="searchContainer">
-                    <input type="text" id="city" placeholder="Enter city name" value="Tokyo">
-                    <button id="searchBtn">Search</button>
-                </div>
-                <!-- Img -->
-                <img class="weatherIcon">
-                <div class="weatherContainer">
-                    <div id="result"></div>
-                    <div id="resultTwo"></div>
-                </div>
+            <div class="header">
+                <h1>WeatherRide Station</h1>
+            </div>
     
-            </div>
+            <div class="mainContainer">
+    
+                <div class="secondContainer">
+    
+                    <!-- First Weather Container -->
+                    <div class="searchContainer">
+                        <button id="searchBtn">Search</button>
+                        <input type="text" id="city" placeholder="Enter city a name" value="Tokyo">
+                    </div>
+                    <!-- Img -->
+                    <img class="weatherIcon">
+                    <div class="weatherContainer">
+                        <div id="result"></div>
+                        <div class="verticalLine"></div>
+                        <div id="resultTwo"></div>
+                    </div>
+                    <!-- Description -->
+                    <div class="descriptionContainer">
+                        Your ultimate companion for adventure sports! <br>
+                        With real-time updates on temperature, wind speed, precipitation, and more. <br>
+                        WeatherRide is the must-have tool to maximize your outdoor experience.
+                    </div>
+        
+                </div>
 
-            </div>
+                    <button class="scrollUp" onclick="toggleButton()">Scroll Up</button>
+
+                </div>
+
+        </div>
 
 
         
