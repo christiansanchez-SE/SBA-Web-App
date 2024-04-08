@@ -88,6 +88,7 @@ body{
 }
 
 .searchContainer input[type="text"] {
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -97,6 +98,7 @@ body{
 
 .searchContainer button {
     background-color: rgb(254,81,99);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 10px;
     color: white;
     padding: 10px 20px;
@@ -161,7 +163,7 @@ body{
     margin: 1em;
     height: 200px;
     width: 100%;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bolder;
     text-align: center;
     display: flex;
@@ -173,6 +175,7 @@ body{
 
 .scrollUp{
     background-color: rgb(254,81,99);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     border-radius: 10px;
     color: white;
     padding: 10px 20px;
@@ -184,6 +187,7 @@ body{
 
 .button1 {
     background: #efefef;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     height: 30px;
     width: 60px;
     border-radius: 20px;

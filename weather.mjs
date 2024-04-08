@@ -5,7 +5,7 @@ let weatherIcon = document.querySelector(".weatherIcon");
 
 export async function getTemp() {
   let cityValue = cityRef.value;
-  if (cityValue.length == 0) {
+  if (cityValue.length === 0) {
     result.innerHTML = `Please enter a city name`;
   } else {
 
