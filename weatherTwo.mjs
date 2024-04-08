@@ -11,7 +11,7 @@ export async function gettempTwo() {
         result.innerHTML = `Please enter a city name`;
     } else {
         let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityValue}&appid=aa459fca760500cc0965198c715b1e6e&units=metric`;
-        fetch(url)
+        await fetch(url)
           .then((response) => response.json())
           .then((json) => {
             result.innerHTML = `
